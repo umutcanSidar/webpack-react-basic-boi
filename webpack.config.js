@@ -18,9 +18,8 @@ module.exports = {
     ],
   },
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "[name].bundle.js",
-    publicPath: "/",
+    path: path.resolve(__dirname, "dist"),
+    filename: "js/[name].bundle.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -28,7 +27,7 @@ module.exports = {
       filename: "index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "public/css/[name].css",
+      filename: "css/[name].css",
     }),
   ],
 };
