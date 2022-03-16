@@ -1,17 +1,15 @@
 import React from "react";
 
-const HomePage = () => {
+const Mailing = () => {
   return (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col">
-            Home Page
-          </div>
+          <div className="col">Mailing</div>
         </div>
       </div>
     </section>
   );
 };
 
-export default HomePage;
+export default Mailing;
