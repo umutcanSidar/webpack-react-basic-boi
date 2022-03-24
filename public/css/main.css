@@ -12,6 +12,7 @@ html, body {
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #F1FAEE;
 }
 /* Header */
 header { padding: 15px 0; margin-bottom: 30px; }

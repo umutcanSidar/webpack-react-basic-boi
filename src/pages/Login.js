@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
-import {signIn} from "../actions/auth.action";
+import { signIn } from "../actions/auth.action";
 
 const Login = () => {
   const [auth, setAuth] = useState({ email: "", password: "" });
@@ -78,6 +78,9 @@ const Login = () => {
                 >
                   Sign in
                 </button>
+                <Link to="/register" className="btn btn-link">
+                  Register
+                </Link>
               </form>
             </div>
           </div>

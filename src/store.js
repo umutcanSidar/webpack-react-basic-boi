@@ -1,9 +1,10 @@
 import { combineReducers, createStore, compose, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
+import Cookies from 'js-cookie';
 
 import authReducer from "./reducers/auth.reducer";
 
-const userInfo = localStorage.getItem("userInfo") || null;
+const userInfo = Cookies.get("userInfo") || null;
 
 const initalState = {
   login: { userInfo },
